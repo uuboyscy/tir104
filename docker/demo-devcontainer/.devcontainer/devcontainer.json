@@ -48,7 +48,7 @@
   "postCreateCommand": "sh ./.devcontainer/postCreateCommand.sh",
   "runArgs": [
     "--name",
-    "dev-${localEnv:USER}-${localEnv:USERNAME}-demo-devcontainer",
+    "dev-demo-devcontainer",
     "--network",
     "host"
   ]
