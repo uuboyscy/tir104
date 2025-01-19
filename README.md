@@ -8,6 +8,13 @@
 - [What is API](https://docs.uuboyscy.dev/docs/intro)
 - [Pandas](https://docs.uuboyscy.dev/docs/category/pandas-tutorial)
   - [Pandas sample code](https://github.com/uuboyscy/course-datamining/blob/master/module_05_Pandas_introduction/00_pandas.ipynb)
+  - Pandas datetime
+    ```
+    """
+    A general datetime format:
+        yyyy-mm-dd HH:MM:ss
+    """
+    ```
 
 ## Advanced
 - [Dev container](https://github.com/uuboyscy/demo-devcontainer)
