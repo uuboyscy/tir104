@@ -135,4 +135,4 @@ dmypy.json
 Pipfile.lock
 requirements.txt
 
-resource/holding.csv
+resource/holding*.csv
