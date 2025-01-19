@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 pandas = "*"
+pendulum = "*"
+pandasql = "*"
 
 [dev-packages]
 ipython = "*"
