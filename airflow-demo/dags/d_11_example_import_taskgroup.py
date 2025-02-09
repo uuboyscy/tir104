@@ -36,7 +36,7 @@ def d_11_example_import_taskgroup():
         print("======")
 
     some_str = generate_some_str()
-    result = do_something(some_str)
+    result = do_something(some_str)  # ["H","E","L","L","O"]
     with TaskGroup(group_id='do_something_task_group') as do_something_task_group:
         # Dynamically create task instances for processing
         print_something_separately.expand(something=result)
