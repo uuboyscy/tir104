@@ -16,9 +16,12 @@
     """
     ```
 ## Orchestration
-# Airflow
+### Airflow
   - [Airflow demo repository](https://github.com/uuboyscy/airflow-demo)
   - [Airflow dosc](https://docs.uuboyscy.dev/docs/Orchestration/AirFlow/)
+
+## Notes
+  - [How to parse external arguments](https://github.com/uuboyscy/tir104/blob/main/airflow-demo/utils/parse_external_arg.py)
 
 ## Advanced
 - [Dev container](https://github.com/uuboyscy/demo-devcontainer)
