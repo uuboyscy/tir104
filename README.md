@@ -62,7 +62,7 @@
     chrome_options.add_argument("--headless")
     
     driver = webdriver.Remote(
-        command_executor="https://standalone-chrome-30300274673.asia-east1.run.app/wd/hub",
+        command_executor="http://localhost:14444/wd/hub",
         options=chrome_options,
     )
     # driver = Chrome()
