@@ -9,6 +9,7 @@ import pandas as pd
 from google.cloud import bigquery
 from google.oauth2.service_account import Credentials
 
+# Determine scopes to query data from GoogleSheets
 GCP_CREDENTIAL_SCOPE = [
     "https://www.googleapis.com/auth/cloud-platform",
     "https://www.googleapis.com/auth/drive",
