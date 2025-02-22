@@ -126,3 +126,6 @@
    ```bash
    docker run -d --name my-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -p 3306:3306 mysql:latest
    ```
+
+## GCP note
+https://uuboyscy.notion.site/GCP-6301fc45c4924b9f929d5aac5049e52c?pvs=4
