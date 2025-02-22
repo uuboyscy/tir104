@@ -1,11 +1,23 @@
+"""
+Pipeline example:
+https://github.com/uuboyscy/ubPython/blob/master/gcp/sample_02_pipeline.ipynb
+"""
+
 import os
 
 import pandas as pd
 from google.cloud import bigquery
 from google.oauth2.service_account import Credentials
 
-
-credentials = Credentials.from_service_account_file("/Users/uuboy.scy/side-project/tibame/tir104/gcp/notional-zephyr-229707-5375017e41c1.json")
+GCP_CREDENTIAL_SCOPE = [
+    "https://www.googleapis.com/auth/cloud-platform",
+    "https://www.googleapis.com/auth/drive",
+    "https://www.googleapis.com/auth/bigquery",
+]
+credentials = Credentials.from_service_account_file(
+    "/Users/uuboy.scy/side-project/tibame/tir104/gcp/notional-zephyr-229707-5375017e41c1.json",
+    scopes=GCP_CREDENTIAL_SCOPE
+)
 # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"/Users/uuboy.scy/side-project/tibame/tir104/gcp/notional-zephyr-229707-5375017e41c1.json"
 
 def query_stackoverflow():
@@ -45,7 +57,7 @@ def query_stackoverflow_to_df() -> pd.DataFrame:
         """
         SELECT
           *
-        FROM `notional-zephyr-229707.tir104_demo.sample_external_table`
+        FROM `notional-zephyr-229707.tir104_demo.gs_demo`
         LIMIT 100"""
     )
 
