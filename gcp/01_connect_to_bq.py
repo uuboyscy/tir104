@@ -45,9 +45,7 @@ def query_stackoverflow_to_df() -> pd.DataFrame:
         """
         SELECT
           *
-        FROM `bigquery-public-data.stackoverflow.posts_questions`
-        WHERE tags like '%google-bigquery%'
-        ORDER BY view_count DESC
+        FROM `notional-zephyr-229707.tir104_demo.sample_external_table`
         LIMIT 100"""
     )
 
