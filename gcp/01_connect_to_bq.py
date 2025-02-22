@@ -16,7 +16,7 @@ GCP_CREDENTIAL_SCOPE = [
     "https://www.googleapis.com/auth/bigquery",
 ]
 credentials = Credentials.from_service_account_file(
-    "/Users/uuboy.scy/side-project/tibame/tir104/gcp/notional-zephyr-229707-5375017e41c1.json",
+    "bigquery-user.json",
     scopes=GCP_CREDENTIAL_SCOPE
 )
 # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"/Users/uuboy.scy/side-project/tibame/tir104/gcp/notional-zephyr-229707-5375017e41c1.json"
