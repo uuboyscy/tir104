@@ -1,4 +1,6 @@
-FROM --platform=linux/amd64 python:3.11-slim-bullseye
+# docker buildx build -f <dockerfile_path> --platform linux/amd64 -t <image_name>:<tag> .
+
+FROM python:3.11-slim-bullseye
 
 WORKDIR /workspace
 
